@@ -139,6 +139,30 @@
 }
 </head>
 <body>
+  <div style="background-color: #c8102e; color: white; text-align: center; padding: 15px; margin-top: 20px;">
+  <h2>Şampiyonluk Geri Sayımı</h2>
+  <p id="countdown" style="font-size: 20px; font-weight: bold;"></p>
+</div>
+
+<script>
+  // Hedef tarih (örnek: 2025 Süper Lig sezon finali 1 Haziran 2025)
+  const hedefTarih = new Date("2025-06-01T00:00:00");
+
+  function sayaciGuncelle() {
+    const simdi = new Date();
+    const fark = hedefTarih - simdi;
+    const gun = Math.floor(fark / (1000 * 60 * 60 * 24));
+
+    const yazi = gun > 0
+      ? `2025 Süper Lig şampiyonuna ${gun} gün kaldı!`
+      : "Sezon sona erdi! Şampiyon GALATASARAY!";
+      
+    document.getElementById("countdown").innerText = yazi;
+  }
+
+  sayaciGuncelle();
+  setInterval(sayaciGuncelle, 1000 * 60 * 60); // Her saat başı güncellenir
+</script>
   <audio autoplay loop>
   <source src="https://galatasaray.org/upload/gs_marsi.mp3" type="audio/mpeg">
   Tarayıcınız bu ses etiketini desteklemiyor.

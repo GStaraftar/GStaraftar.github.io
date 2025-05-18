@@ -11,6 +11,7 @@
     color: #a32626; /* Galatasaray kırmızısı */
     margin: 0;
     padding: 20px;
+    line-height: 1.6; /* Satır aralığı */
   }
   header {
     background: #f9b700; /* Sarı */
@@ -35,6 +36,28 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #d4b72f;
   }
+  .haber a {
+    color: #a32626;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .haber a:hover {
+    text-decoration: underline;
+  }
+  /* Mobil uyumluluk */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    header {
+      font-size: 1.5em;
+      padding: 15px;
+    }
+    section {
+      margin: 15px 10px;
+      max-width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
@@ -51,11 +74,11 @@
 <section>
   <h2>Güncel Haberler</h2>
   <div class="haber">
-    <h3>Ziraat Türkiye Kupası Finalinde Trabzonspor’u 2-0 Mağlup Ettik</h3>
+    <h3><a href="https://www.galatasaray.org/haber/kulup/zirat-turkiye-kupasi-finalinde-trabzonspor-u-2-0-maglup-ettik/53489" target="_blank" rel="noopener">Ziraat Türkiye Kupası Finalinde Trabzonspor’u 2-0 Mağlup Ettik</a></h3>
     <p>Galatasaray, Ziraat Türkiye Kupası finalinde Trabzonspor'u 2-0 mağlup ederek 19. kez bu kupayı kazandı. Maçta golleri Abdülkerim Bardakcı ve Álvaro Morata kaydetti. Morata, maç sonrası yaptığı açıklamada, "Kariyerimde görmediğim inanılmaz bir tutku var burada" dedi.</p>
   </div>
   <div class="haber">
-    <h3>Trabzonspor’u 2-0 Yendik, Şampiyonluk İçin Bir Adım Daha Attık</h3>
+    <h3><a href="https://www.galatasaray.org/haber/futbol/trabzonsporu-2-0-yendik-sampiyonluk-icin-bir-adim-daha-attik/53474" target="_blank" rel="noopener">Trabzonspor’u 2-0 Yendik, Şampiyonluk İçin Bir Adım Daha Attık</a></h3>
     <p>Süper Lig'in 35. haftasında Galatasaray, Trabzonspor'u deplasmanda 2-0 mağlup etti. Bu galibiyetle birlikte şampiyonluk için önemli bir adım daha attık. Golleri Abdülkerim Bardakcı ve Álvaro Morata kaydetti.</p>
   </div>
 </section>

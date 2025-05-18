@@ -121,7 +121,17 @@
       }
     }
   </style>
-  @keyframes spin {
+  <div style="padding: 20px; background: #fdf2d1;">
+  <h2>Ziyaretçi Defteri</h2>
+  <form>
+    <label for="name">Adınız:</label><br>
+    <input type="text" id="name" name="name" style="width: 100%;"><br><br>
+    <label for="message">Mesajınız:</label><br>
+    <textarea id="message" name="message" rows="4" style="width: 100%;"></textarea><br><br>
+    <button type="button" onclick="alert('Mesajınız kaydedildi! (Gerçek kayıt yapılmıyor)')">Gönder</button>
+  </form>
+</div>
+    @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
